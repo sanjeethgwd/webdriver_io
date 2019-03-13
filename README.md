@@ -1,6 +1,6 @@
 # webdriver_io
 
-## This explain you the basic understanding of webdriver.io in Automation.
+## This will explain you the basic understanding of webdriver.io in Automation.
 
 ### Steps:
 
