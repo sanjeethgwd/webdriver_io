@@ -1,6 +1,6 @@
 import BasePage from '../base.page';
 import HomePage from '../home/home.page';
-import Selectors from './selectors';
+import _elements from './selectors';
 
 class LoginPage extends BasePage {
 
@@ -9,12 +9,12 @@ class LoginPage extends BasePage {
     }
 
     login(username, password){
-        Selectors.username.setValue(username);
-        Selectors.password.setValue(password);
-        Selectors.submit.click();
-        Selectors.flash.waitForDisplayed();
+        _elements.username.setValue(username);
+        _elements.password.setValue(password);
+        _elements.submit.click();
+        _elements.flash.waitForDisplayed();
 
-        if(Selectors.flash.getText() === "Your username is invalid!\n×"){
+        if(_elements.flash.getText() === "Your username is invalid!\n×"){
             return this;
         } else {
             return HomePage;
