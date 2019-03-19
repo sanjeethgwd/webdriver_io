@@ -1,10 +1,6 @@
-class Selectors {
-
-    get username(){ return  $('#username'); }
-    get password(){ return $('#password'); }
-    get submit(){ return $('[type="submit"]'); }
-    get flash(){ return  $('#flash'); }
-
-}
-
-export default new Selectors();
+export default  {
+    usernameInput: '#username',
+    passwordInput: '#password',
+    submitButton: '[type="submit"]',
+    flashMessage: '#flash'
+};
